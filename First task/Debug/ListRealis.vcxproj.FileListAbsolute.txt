@@ -1,0 +1,2 @@
+C:\Users\Evgeny\source\repos\ListRealis\Debug\ListRealis.exe
+C:\Users\Evgeny\source\repos\ListRealis\Debug\ListRealis.pdb
