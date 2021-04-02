@@ -1,2 +1,4 @@
 C:\Users\Evgeny\source\repos\ListRealis\Debug\ListRealis.exe
 C:\Users\Evgeny\source\repos\ListRealis\Debug\ListRealis.pdb
+C:\Users\Evgeny\Documents\GitHub\LuxoftTrainee\First task\Debug\ListRealis.exe
+C:\Users\Evgeny\Documents\GitHub\LuxoftTrainee\First task\Debug\ListRealis.pdb
