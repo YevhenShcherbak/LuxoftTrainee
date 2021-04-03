@@ -28,6 +28,8 @@ public:
 	void pop_forward();
 	void pop_back();
 	void removeAt(const int index);
+	void clear();
+	void show();
 };
 
 template<typename Item>
@@ -40,6 +42,7 @@ List<Item>::List()
 template<typename Item>
 List<Item>::~List()
 {
+	clear();
 }
 
 template<typename Item>
@@ -122,10 +125,43 @@ void List<Item>::pop_back()
 }
 
 template<typename Item>
-void showList(List<Item> list) {
-	for (int i = 0; i < list.GetSize(); i++)
+void List<Item>::removeAt(const int index)
+{
+	if (index == 0)
 	{
-		std::cout << list[i] << ' ';
+		pop_forward();
+	}
+	else
+	{
+		Node<Item>* previous = this->head;
+		for (int i = 0; i < index - 1; i++)
+		{
+			previous = previous->pNext;
+		}
+		Node<Item>* toDel = previous->pNext;
+		previous->pNext = toDel->pNext;
+		delete toDel;
+		--size;
+	}
+}
+
+template<typename Item>
+void List<Item>::clear()
+{
+	while (size) 
+	{
+		pop_forward();
+	}
+}
+
+template<typename Item>
+void List<Item>::show()
+{
+	Node<Item>* current = this->head;
+	while (current != nullptr)
+	{
+		std::cout << current->value << ' ';
+		current = current->pNext;
 	}
 	std::cout << std::endl;
 }
@@ -137,17 +173,10 @@ int main()
 	list1.push_back(10);
 	list1.push_back(11);
 	list1.push_forward(4);
-	showList(list1);
-	//std::cout << list1.GetSize() << std::endl;
+	list1.show();
 
-	list1.pop_back();
-	list1.pop_back();
-	showList(list1);
-	list1.pop_back();
-	list1.pop_back();
-	list1.pop_back();
-	showList(list1);
-	//std::cout << list1.GetSize() << std::endl;
+	list1.removeAt(3);
+	list1.show();
 
 	return 0;
 }
