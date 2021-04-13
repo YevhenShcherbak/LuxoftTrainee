@@ -1,0 +1,10 @@
+^C:\USERS\EVGENY\DOCUMENTS\GITHUB\LUXOFTTRAINEE\FIRST TASK\CMAKEFILES\328C73661B1727CB34D7DB7BFD9DE8F5\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Evgeny/Documents/GitHub/LuxoftTrainee/First task" "-BC:/Users/Evgeny/Documents/GitHub/LuxoftTrainee/First task" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Evgeny/Documents/GitHub/LuxoftTrainee/First task/ListRealization.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

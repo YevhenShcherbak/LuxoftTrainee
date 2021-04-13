@@ -1,0 +1,3 @@
+C:/Users/Evgeny/Documents/GitHub/LuxoftTrainee/First task/CMakeFiles/ListRealization.dir
+C:/Users/Evgeny/Documents/GitHub/LuxoftTrainee/First task/CMakeFiles/ALL_BUILD.dir
+C:/Users/Evgeny/Documents/GitHub/LuxoftTrainee/First task/CMakeFiles/ZERO_CHECK.dir
