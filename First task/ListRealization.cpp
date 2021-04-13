@@ -21,7 +21,6 @@ class List
 public:
 	List();
 	~List();
-	const int GetSize() { return size; }
 	Item& operator[](const int index);
 	void push_back(Item value);
 	void push_forward(Item value);
@@ -30,6 +29,8 @@ public:
 	void removeAt(const int index);
 	void clear();
 	void show();
+	
+	const int GetSize() { return size; }
 };
 
 template<typename Item>
